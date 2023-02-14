@@ -25,4 +25,5 @@ if (args.r || args.rules) {
     console.log(`  - Scissors CUTS Paper`)
     console.log(`  - Paper COVERS Rock`)
     console.log(`  - Rock CRUSHES Scissors`)
+    process.exit(0)
 }

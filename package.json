@@ -1,6 +1,7 @@
 {
   "name": "node-rpsls",
   "version": "1.0.0",
+  "type": "module",
   "description": "Command-line games of Rock/Paper/Scissors and Rock/Paper/Scissors/Lizard/Spock",
   "main": "./lib/rpsls.js",
   "scripts": {

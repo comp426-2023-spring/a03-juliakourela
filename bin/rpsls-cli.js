@@ -39,9 +39,7 @@ if (args.r || args.rules) {
 }
 
 var gameresult = JSON.stringify(rpsls(args._[0]));
-var blah = (gameresult === "error: out of range");
-console.log(JSON.stringify(blah));
-if (gameresult === "error: out of range") {
+if (gameresult === JSON.stringify("error: out of range")) {
   console.log(`
   Usage: node-rpsls [SHOT]
   Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!

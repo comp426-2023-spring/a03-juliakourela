@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import minimist from 'minimist';
+import { rpsls } from "../lib/rpsls.js";
 
 let args = minimist(process.argv.slice(2));
 
@@ -36,3 +37,5 @@ if (args.r || args.rules) {
   - Rock CRUSHES Scissors`);
     process.exit(0);
 }
+
+console.log(JSON.stringify(rpsls(args._[0])));

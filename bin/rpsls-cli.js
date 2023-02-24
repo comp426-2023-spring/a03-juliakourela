@@ -38,11 +38,21 @@ if (args.r || args.rules) {
     process.exit(0);
 }
 
-try {
-  var result = JSON.stringify(rpsls(args._[0]));
+try { 
+  console.log(JSON.stringify(rps(args._[0])));
 }
 catch (error) {
   console.log(`Rules for the Lizard-Spock Espansion of Rock Paper Scissors:`);
-  process.exit(1);                      
+  console.log(`  - Scissors CUTS Paper`);
+  console.log(`  - Paper COVERS Rock`);
+  console.log(`  - Rock SMOOSHES Lizard`);
+  console.log(`  - Lizard POISONS Spock`);
+  console.log(`  - Spock SMASHES Scissors`);
+  console.log(`  - Scissors DECAPITATES Lizard`);
+  console.log(`  - Lizard EATS Paper`);
+  console.log(`  - Paper DISPROVES Spock`);
+  console.log(`  - Spock VAPORIZES Rock`);
+  console.log(`  - Rock CRUSHES Scissors`);
+  console.log(`Usage: node-rpsls [SHOT]`);
+  process.exit(0);                   
 }
-console.log(result);

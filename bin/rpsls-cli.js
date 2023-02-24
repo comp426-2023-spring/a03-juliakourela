@@ -41,7 +41,7 @@ if (args.r || args.rules) {
 try {
   console.log(JSON.stringify(rpsls(args._[0])));
 }
-  catch (error) {
-      console.log(`Rules for the Lizard-Spock Espansion of Rock Paper Scissors:`);
-      process.exit(0);                      
-  }
+catch (error) {
+  console.log(`Rules for the Lizard-Spock Espansion of Rock Paper Scissors:`);
+  process.exit(0);                      
+}
